@@ -13,13 +13,13 @@ class UI {
     this.desc.textContent = `${weather.weather[0].main}, ${
       weather.weather[0].description
     }`;
-    this.string.textContent = `${weather.main.temp} C`;
+    this.string.textContent = `${weather.main.temp} °C`;
     this.icon.setAttribute(
       "src",
-      `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`
+      `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`
     );
-    this.humidity.textContent = `Humidity: ${weather.main.humidity}m/s`;
+    this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
 
-    this.wind.textContent = `Wind: ${weather.wind.speed}`;
+    this.wind.textContent = `Wind: ${weather.wind.speed}m/s`;
   }
 }
