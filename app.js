@@ -5,6 +5,10 @@ const weather = new Weather("London", "uk");
 
 const ui = new UI();
 
+// Get weather on DOM load
+
+document.addEventListener("DOMContentLoaded", getWeather);
+
 weather
   .getWeather()
   .then(results => {
