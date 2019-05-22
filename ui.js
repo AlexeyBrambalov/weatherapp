@@ -13,7 +13,7 @@ class UI {
     this.desc.textContent = `${weather.weather[0].main}, ${
       weather.weather[0].description
     }`;
-    this.string.textContent = `${weather.main.temp} °C`;
+    this.string.textContent = `${weather.main.temp} C`;
     this.icon.setAttribute(
       "src",
       `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`
